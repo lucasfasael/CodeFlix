@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@300;400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(10, 10, 85);
+}
+
+ul{
+    list-style: none;
+    color: aliceblue;
+}
+
+a, h2{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-home{
+    display: flex;
+    height: 5vh;
+    width: 99.9vw;
+    justify-content: space-around;
+    justify-items: center;
+    background-color: rgb(64, 64, 243);
+    line-height: 40px;
+    padding: 10px 0;
+}
+
+.colunas{
+    height: 100%;
+}
+
+.listagem-menu{
+    display: flex;
+}
+
+.item{
+    height: 100%;
+    padding: 10px;
+}
+
+.item:hover{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.listagem-gerenciamento{
+    text-align: center;
+}

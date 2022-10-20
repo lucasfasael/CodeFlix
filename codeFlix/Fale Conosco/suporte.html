@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="supcss.css">
+    <title>Suporte</title>
+</head>
+<body>
+    <header class="menu-home">
+        <div class="colunas">
+            <h2>CodeFlix</h2>
+        </div>
+        <div class="colunas">
+            <ul class="listagem-menu">
+                <li class="">
+                    <a class="item" href="../Home/html/index.html">Início</a>
+                </li>
+                <li class="">
+                    <a class="item" href="../Fale Conosco/suporte.html">Contato</a>
+                </li>
+                <li class="">
+                    <a class="item" href="../Sobre/sobre.html">Sobre</a>
+                </li>
+            </ul>
+        </div>
+        <div class="colunas">
+            <div class="gerenciamento">
+                <ul class="listagem-gerenciamento">
+                    <li>
+                        <a class="item" href="#">Meu perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="left">
+            <img width="70%" src="suporte-servicos.png" alt="SupImgError">
+            <h1>Fale Conosco</h1>
+        </div>
+        <div class="right">
+            <div class="card">
+                <h1>Envie sua dúvida</h1>
+                <br>
+                <h4>Selecione o seu problema, digite nome completo, e-mail e a sua mensagem detalhando o seu problema ou sugestão!</h4>
+                <form action="" method="POST" autocomplete="on">
+                    <select name="Dúvida" id="Dúvida">
+
+                        <option value="" selected>--- Escolha ---</option>
+                        <optgroup label="Dúvidas">
+                            <option value="DV">Como eu crio uma conta ?</option>
+                            <option value="DV">Como faço para ganhar meus certificados ?</option>
+                            <option value="DV">Como eu solicito um contéudo ?</option>
+                            <option value="DV">Como eu vejo a porcentagem dos meus cursos ?</option>
+                            <option value="outro">Outro</option>
+                        </optgroup>
+                        <optgroup label="Problemas">
+                            <option value="PB">Não consigo realizar login</option>
+                            <option value="PB">Não consigo resgatar meu certificado</option>
+                            <option value="PB">Não consigo alterar minha senha</option>
+                            <option value="PB">Meu vídeo está travando continuamente</option>
+                            <option value="outro">Outro</option>
+                        </optgroup>
+                        <optgroup label="Sugestões">
+                            <option value="SG">Sugestão de melhoria de aparência de layout</option>
+                            <option value="SG">Gostaria de solicitar a adição de um curso</option>
+                            <option value="SG">Falha de segurança</option>
+                            <option value="SG">Rapidez e eficiência</option>
+                            <option value="outro">Outro</option>
+                        </optgroup>
+                    </select>
+                    <p>
+                        <input name="nome" type="text" id="nome" placeholder="Nome Completo">
+                    </p>
+                    <p>
+                        <input name="email" type="email" id="email" placeholder="E-mail">
+                    </p>
+                    <p>
+                        <label for="msg">Mensagem: </label> <br>
+                        <textarea name="msg" id="msg" cols="60" rows="8" placeholder="Sua mensagem aqui..."></textarea>
+                    </p>
+                    <button class="btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </article>
+    <footer>
+      
+    </footer>
+</body>
+</html>

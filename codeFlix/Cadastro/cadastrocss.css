@@ -1,0 +1,111 @@
+@import url(../menu.css);
+header{
+    height: 5vh;
+    width: 99.9vw;
+}
+article{
+    display: flex;
+    height: 92.3vh;
+    width: 99.8vw;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+.left > h1{
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    color: rgb(29, 214, 220);
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+.img{
+    height: 80%;
+    width: 80%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+    text-align: center;
+    background: rgb(92, 135, 208);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #000000cb;
+}
+.card > h1{
+    color: rgb(18, 18, 133);
+    font-weight: 800;
+    font-size: 40px;
+}
+.card > h4{
+    font-weight: 400;
+}
+h4 > a{
+    color: rgb(29, 214, 220);
+}
+.caixa{
+    display: flex;
+    height: 20%;
+    width: 100%;
+}
+.cl{
+    height: 50%;
+    width: 50%;
+}
+.cr{
+    height: 50%;
+    width: 50%;
+}
+button{
+    width: 40%;
+    padding: 3% 0%;
+    margin: 2%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #000000;
+    background: rgb(29, 214, 220);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(10, 65, 67);
+}
+button:hover{
+    background-color: #00ff40a5;
+    box-shadow: 0px 10px 40px -12px rgb(0, 0, 0);
+}
+input{
+    border: 2px solid #000000;
+    margin-bottom: 2%;
+    border-radius: 8px;
+    height: 6%;
+    width: 70%;
+    text-align: center;
+    font-size: 100%;
+}
+.c1{
+    border: 2px solid #000000;
+    border-radius: 8px;
+    height: 65%;
+    width: 80%;
+    text-align: center;
+    font-size: 100%;
+}
+
+
+
