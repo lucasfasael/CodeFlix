@@ -20,7 +20,7 @@ body{
 
 .banner-cursos{
     background-color: black;
-    width: 1500px;
+    width: 1200px;
     margin: auto;
     padding: 100px 0;
 }
@@ -55,19 +55,6 @@ body{
     transform: scale(1.02);
 }
 
-@media (max-width:742px){
-    .container-background-vazio{
-        display: none;
-    }
-    .banner-cursos{
-        display: flex;
-        flex-direction: column;
-        background-color: black;
-        width: 1100px;
-        margin: auto;
-        padding: 100px 0;
-    }
-}
 
 
 /* @media screen and (max-width: 1200px) and (min-width:584px){

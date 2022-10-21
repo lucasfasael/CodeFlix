@@ -1,4 +1,11 @@
 @import url(../menu.css);
+
+
+.menu-home{
+    width: 100%;
+    height: 45px;
+}
+
 header{
     height: 5vh;
     width: 99.9vw;
@@ -7,6 +14,7 @@ article{
     display: flex;
     height: 92.3vh;
     width: 99.8vw;
+    padding: 60px 0;
 }
 .left{
     display: flex;
