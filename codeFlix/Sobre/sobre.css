@@ -7,9 +7,15 @@ article{
 }
 h1{
     margin: 1%;
+    color: rgb(29, 214, 220);
+    text-shadow: 2px 2px 5px rgb(7, 36, 12);
+}
+.colunas h1{
+    color: aliceblue
 }
 h3{
     color: black;
+    text-shadow: 1px 1px 1px rgb(0, 225, 255), 2px 2px 1px rgb(0, 30, 128);
     font-size: 25px;
 }
 h5{
@@ -34,6 +40,9 @@ h5{
     border-radius: 20px;
     box-shadow: 0px 10px 40px #000000cb;
 }
+.card > a{
+    color: rgb(41, 248, 255);
+}
 .down{
     border: 1px solid black;
     display: flex;
@@ -44,61 +53,84 @@ h5{
 .html{
     width: 20%;
     height: 90%;
-    background: rgb(92, 135, 208);
-    background-image: url(html.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center center;
-    border-radius: 20px;
-    box-shadow: 0px 10px 40px #000000cb;
-}
-.python{
-    width: 20%;
-    height: 90%;
-    background: rgb(92, 135, 208);
-    background-image: url(Python.svg.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center center;
-    border-radius: 20px;
-    box-shadow: 0px 10px 40px #000000cb;
-}
-.c{
-    width: 20%;
-    height: 90%;
-    background: rgb(92, 135, 208);
-    background-image: url(c.png);
+    background-image: url(../Sobre/Imagens/html5.png);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #000000cb;
 }
-.dart{
+
+
+.css{
     width: 20%;
     height: 90%;
-    background: rgb(92, 135, 208);
-    background-image: url(dart.png);
+    background-image: url(../Sobre/Imagens/css1.png);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
+    background-color: rgba(255, 0, 0, 0.233);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #000000cb;
+}
+
+.dd:hover{
+    transform: scale(1.12);
+}
+
+.dd:hover{
+    transition: transform .5s;
+}
+
+.js{
+    width: 20%;
+    height: 90%;
+    background-image: url(../Sobre/Imagens/jv.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center center;
+    background-color: #e5a328;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #000000cb;
+}
+.card > a {
+    text-decoration: underline;
+    margin-top: 13px;
+}
+.btp{
+    width: 20%;
+    height: 90%;
+    background-image: url(../Sobre/Imagens/bootstrap1.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center center;
+    background-color: #6c0fec;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #000000cb;
 }
 footer{
-    border: 1px solid yellow;
+    background-image: url(Imagens/back-foot.jpg);
     display: flex;
     height: 11.2vh;
     width: 99.74vw;
+    color: rgb(29, 214, 220);
 }
 .left{
-    border: 1px solid purple;
+    background-image: url(Imagens/codefoot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     height: 100%;
-    width: 50%;
+    width: 20%;
 }
 .right{
     height: 100%;
     width: 50%;
+    display: flex;
+    align-items: center;
+}
+.right > h4{
+    color: aliceblue;
 }
 .bg{
     height: 100%;
@@ -108,3 +140,37 @@ footer{
     background-size: cover;
     background-position: center center;
 }
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.cont{
+    width: 95%;
+    height: 30%;
+    border: 1px solid blue;
+}
+.img1{
+    height: 100%;
+    width: 15%;
+}
+.img2{
+    height: 100%;
+    width: 15%;
+}
+.img3{
+    width: 15%;
+    height: 100%;
+}
+
+
+
+/*
+border: solid 1px;
+    border-color: aliceblue;
+    background: -webkit-linear-gradient(right,rgba(167, 8, 230, 0.418) , rgba(255, 0, 0, 0.473), rgba(167, 8, 230, 0.418) );
+*/

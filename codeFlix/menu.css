@@ -53,3 +53,8 @@ a, h2{
 .listagem-gerenciamento{
     text-align: center;
 }
+@media (max-width:440px){
+    .colunas > h2{
+        display: none;
+    }
+}
