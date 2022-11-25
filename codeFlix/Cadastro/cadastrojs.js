@@ -1,14 +1,44 @@
 var salvarPessoa = document.querySelector("button#salvar")
-
 salvarPessoa.addEventListener("click",salvar)
 
+
+
 function salvar(){
-    //var nome = document.querySelector("input#nome")
-        //console.log("queijo")
+    
+    erros = validarCadastro()
+
+    if(erros.length > 0)
+    {
+        //chama funcao pra inserir no ID de erros
+        //returna
+    }
+    //se nao, adiciona na tabela com o append
     salvarPessoa.style.color = "red"
 }
 
+function validarCadastro()
+{
+    erros = []
+    var aux = [];
+    var nome = document.querySelector("input#nome")
 
+    if(nome.value.length < 3)
+    {
+        erros.push("Digite seu nome completo!")
+    }
+
+    var email = document.querySelector("input#email")
+
+    if(!email.value.includes("@")|| !email.value.includes(".com"))
+    {
+        erros.push("Digite um e-mail válido!")
+    }
+
+
+
+    console.log("fim")
+    return erros;
+}
 
 
 
