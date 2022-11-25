@@ -1,3 +1,29 @@
+var salvarPessoa = document.querySelector("button#salvar")
+
+salvarPessoa.addEventListener("click",salvar)
+
+function salvar(){
+    //var nome = document.querySelector("input#nome")
+        //console.log("queijo")
+    salvarPessoa.style.color = "red"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var dark = document.getElementById("darktheme");
 
 dark.addEventListener("click", function(){

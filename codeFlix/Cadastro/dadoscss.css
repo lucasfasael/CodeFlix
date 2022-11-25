@@ -51,28 +51,25 @@ td{
     background-color: rgb(7, 217, 14);
 }
 @media (max-width:1250px){
-    .card{
+    section > .card{
         width: 100%;
         padding: none;
     }
-    .card > table{
+    section > .card > table{
         width: 50%;
         font-size: 15px;
     }
    
 }
 @media (max-width:1050px){
-    body{
-        padding: none;
-    }
-    .card{
+    section > .card{
         width: 100%;
         padding: none;
     }
-    .card > h1{
+    section > .card > h1{
         font-size: 14px;
     }
-    .card > table{
+    section > .card > table{
         width: 50%;
         font-size: 9px;
     }
@@ -82,13 +79,13 @@ td{
         width: 200vw;
         height: 200vh;
     }
-    .card{
+    section > .card{
         box-shadow: none;
         background: none;
     }
-    .card > h1{
-        display: none;
-    }
+        section > .card > h1{
+            display: none;
+        }
     table{
         width: 200%;
     }

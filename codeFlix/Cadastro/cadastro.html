@@ -73,7 +73,16 @@
                     <input id="Endereço" name="Endereço" placeholder="Digite o seu endereço aqui" type="text" required>
                     <br>
                     <label for="Perfil">Tipo de Perfil<br></label>
-                    <input id="Perfil" name="Perfil" type="radio" required>
+
+                    <div class="caixa">
+                        <input id="Perfil1" name="Perfil" type="radio" required>
+                        <label for="perfil1">administrador</label>
+                        <input id="Perfil2" name="Perfil" type="radio" required>
+                        <label for="perfil2">professor</label>
+                        <input id="Perfil3" name="Perfil" checked type="radio" required>
+                        <label for="perfil3">aluno</label>
+                    </div>
+
                     <br>
                     <div class="caixa">
                     <div class="cl">
@@ -85,7 +94,10 @@
                         <input class="c1" id="confsenha" name="confsenha" placeholder="Confirme sua senha aqui" type="password" required>
                     </div>
                     </div>
-                    <button>Enviar</button>
+                    <div class="caixa">
+                        <button id = "salvar">Salvar</button>
+                        <button type="reset">Apagar</button>
+                    </div>
                 </form>
             </div>
         </div>
