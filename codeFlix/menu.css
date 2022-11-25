@@ -57,4 +57,7 @@ a, h2{
     .colunas > h2{
         display: none;
     }
+    #img-logo{
+        display: none;
+    }
 }

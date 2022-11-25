@@ -1,5 +1,5 @@
 @import url(../menu.css);
-
+@import url(../footer.css);
 
 .menu-home{
     width: 100%;
@@ -114,6 +114,7 @@ input{
     text-align: center;
     font-size: 100%;
 }
+
 @media (max-width:1200px){
     body{
         font-size: 14px;

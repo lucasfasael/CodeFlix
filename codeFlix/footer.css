@@ -1,0 +1,29 @@
+footer{
+    background-image: url(Imagens/back-foot.jpg);
+    display: flex;
+    height: 11.2vh;
+    width: 99.74vw;  
+}
+.footer-left{
+    background-image: url(Imagens/codefoot.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 100%;
+    width: 20%;
+}
+.footer-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.footer-rightrr{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.footer-right > h4{
+    color: rgb(29, 214, 220);
+}

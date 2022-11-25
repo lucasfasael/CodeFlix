@@ -1,5 +1,5 @@
 @import url(../menu.css);
-
+@import url(../footer.css);
 article{
     text-align: center;
     height: 79.3vh;
@@ -8,7 +8,6 @@ article{
 h1{
     margin: 1%;
     color: rgb(29, 214, 220);
-    text-shadow: 2px 2px 5px rgb(7, 36, 12);
 }
 .colunas h1{
     color: aliceblue;
@@ -113,41 +112,10 @@ h5{
     font-size: 32px;
     text-shadow: none;
 }
-footer{
-    background-image: url(Imagens/back-foot.jpg);
-    display: flex;
-    height: 11.2vh;
-    width: 99.74vw;
-    color: rgb(29, 214, 220);
-}
-.left{
-    background-image: url(Imagens/codefoot.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100%;
-    width: 20%;
-}
-.right{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
-.right > h4{
-    color: aliceblue;
-}
-.bg{
-    height: 100%;
-    width: 100%;
-    background-image: url(back-foot.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
+
 
 .card2{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -189,6 +157,32 @@ h4 > a{
 .img3{
     width: 15%;
     height: 100%;
+}
+button{
+    margin-top: -62px;
+    margin-bottom: 30px;
+    height: 50px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #000000;
+    background: rgb(29, 214, 220);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(10, 65, 67);
+}
+button:hover{
+    background-color: #00ff40a5;
+    box-shadow: 0px 10px 40px -12px rgb(0, 0, 0);
+}
+.flex-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
 }
 
 

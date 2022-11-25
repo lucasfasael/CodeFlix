@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastrocss.css">
+    <link rel="icon" href="../favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="dadoscss.css" type="text/css">
+    <script src="../theme.js" defer></script>
+    <script src="cadastrojs.js" defer></script>
     <title>Cadastro</title>
 </head>
 <body>
     <header>
         <nav class="menu-home">
-            <div class="colunas">
-                <h2>CodeFlix</h2>
+            <div id="img-logo" class="colunas">
+                <img src="../Imagens/codefoot-1.png" width="250" alt="CodeFlix Logo">
             </div>
             <div class="colunas">
                 <ul class="listagem-menu">
@@ -40,7 +44,7 @@
     </header>
     <article>
         <div class="left">
-            <h1>Cadastre-se</h1>
+            <h1 id="cd">Cadastre-se</h1>
             <div class="img">
                 <img src="gif.svg" alt="gifERROR">
             </div>
@@ -62,6 +66,15 @@
                     <label for="user">Usuário<br></label>
                     <input id="user" name="user" placeholder="Digite o seu login aqui" type="text" required>
                     <br>
+                    <label for="CPF">CPF<br></label>
+                    <input id="CPF" name="CPF" placeholder="Digite o seu CPF aqui" type="text" required>
+                    <br>
+                    <label for="Endereço">Endereço<br></label>
+                    <input id="Endereço" name="Endereço" placeholder="Digite o seu endereço aqui" type="text" required>
+                    <br>
+                    <label for="Perfil">Tipo de Perfil<br></label>
+                    <input id="Perfil" name="Perfil" type="radio" required>
+                    <br>
                     <div class="caixa">
                     <div class="cl">
                         <label for="senha">Senha</label>
@@ -77,6 +90,22 @@
             </div>
         </div>
     </article>
-    
+    <section>
+        <div class="card">
+            <h1>Dados Cadastrais</h1>
+            <table>
+            <tr class="dado"> <td>NOME</td> <td>TELEFONE</td> <td>E-MAIL</td> <td>DATA DE NASCIMENTO</td> <td>DATA DE CADASTRO</td> <td>USUÁRIO</td> 
+            </tr>
+            <tr> <td>Lucas Fasael</td> <td>(79) 9 9182-4519</td> <td>fasael@hotmail.com</td> <td>22/07/1998</td> <td>13/10/2022</td> <td>FullStack123</td> 
+            </tr>
+            </table>
+            </div>
+    </section>
+
+    <footer>
+        <div class="footer-left"></div>
+        <div class="footer-right"><h4>Telefone: (79) 9 9182 - 4519 <br>E-mail: codeflix@code.com</h4></div>
+        <div class="footer-righrr"><h2 id="lighttheme">LightTheme</h2> <br> <h2 id="darktheme">DarkTheme</h2></div>
+    </footer>
 </body>
 </html>

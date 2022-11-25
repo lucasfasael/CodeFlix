@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="sobre.css">
+    <link rel="icon" href="../favicon-32x32.png" type="image/x-icon">
+    <script src="sobreJS.js" defer></script>
+    <script src="../theme.js" defer></script>
     <title>Sobre</title>
 </head>
-<body>
-    <header class="menu-home">
-        <div class="colunas">
-            <h1>CodeFlix</h1>
+<body id="arti">
+    <header class="menu-home">        
+        <div id="img-logo" class="colunas">
+            <img src="../Imagens/codefoot-1.png" width="250" alt="CodeFlix Logo">
         </div>
         <div class="colunas">
             <ul class="listagem-menu">
@@ -33,7 +36,7 @@
                 <ul class="listagem-gerenciamento">
                 </ul>
             </div>
-        </div>
+        </div>   
     </header>
     <article>
     <div class="up">
@@ -41,7 +44,7 @@
             <h3>Sobre nós</h3>
             <h5>A Codeflix é uma empresa de tecnologia que atua na área educacional, oferecendo cursos gratuitos para quem quer ingressar na área de TI.<br>
                 Embora seja uma empresa de tecnologia, por enquanto atua no segmento de Desenvolvimento Web, com foco em preparar desenvolvedores Front-end. <br>Com o avanço da empresa e o aumento de números de assinantes, a Codeflix pretende lançar cursos mais avançados de forma paga. Como curso de PHP, Banco de Dados, introdução ao Wordpress, Programação Orientada a Objetos, Segurança da Informação e diversos outros.
-                </h5> <a href="#saibaMais" class="saibaMais">Saiba mais</a>
+                </h5>
         </div>
         <div class="card">
             <h3>História</h3>
@@ -61,7 +64,10 @@
     </div>
     </article>
 
-    <div class="card2" id="saibaMais">
+    <div class="flex-btn">
+    <button id="action-btn">Desenvolvedores</button>
+    </div>
+    <div id="container" class="card2">
         <div class="cont">
             <img class="img1" src="Imagens/dev1.jpg" alt="devError">
             <div class="contfilho"><h4>Olá, meu nome é Lucas Fasael, comecei a programar a menos de 1 ano e agora sou desenvolvedor Front End da CodeFlix. <br> Códigos: <a href="https://github.com/lucasfasael">GitHub</a> </h4></div>
@@ -75,8 +81,9 @@
     </div>
 
     <footer>
-        <div class="left"></div>
-        <div class="right"><h4>Telefone: (79) 9 9182 - 4519 <br>E-mail: codeflix@code.com</h4></div>
+        <div class="footer-left"></div>
+        <div class="footer-right"><h4>Telefone: (79) 9 9182 - 4519 <br>E-mail: codeflix@code.com</h4></div>
+        <div class="footer-righrr"><h2 id="lighttheme">LightTheme</h2> <br> <h2 id="darktheme">DarkTheme</h2></div>
     </footer>
 </body>
 </html>
