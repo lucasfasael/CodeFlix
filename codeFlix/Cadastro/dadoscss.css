@@ -2,8 +2,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 section > .card{
     overflow: scroll;
@@ -56,7 +56,7 @@ td{
         padding: none;
     }
     section > .card > table{
-        width: 50%;
+        width: 100%;
         font-size: 15px;
     }
    
@@ -70,7 +70,7 @@ td{
         font-size: 14px;
     }
     section > .card > table{
-        width: 50%;
+        width: 100%;
         font-size: 9px;
     }
 }
@@ -79,14 +79,19 @@ td{
         width: 200vw;
         height: 200vh;
     }
+    section{
+        height: 20%;
+    }
     section > .card{
         box-shadow: none;
         background: none;
+        justify-content: flex-start;
     }
         section > .card > h1{
             display: none;
         }
     table{
-        width: 200%;
+        overflow: scroll;
+        width: 100%;
     }
 }

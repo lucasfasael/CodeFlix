@@ -1,7 +1,9 @@
 footer{
     background-image: url(Imagens/back-foot.jpg);
     display: flex;
-    height: 11.2vh;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
     width: 99.74vw;  
 }
 .footer-left{

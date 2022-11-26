@@ -49,8 +49,8 @@ article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    height: 100%;
+    width: 70%;
+    height: 90%;
     text-align: center;
     background: rgb(92, 135, 208);
     border-radius: 20px;
@@ -70,7 +70,6 @@ h4 > a{
 .caixa{
     display: flex;
     width: 100%;
-    /* border: solid 1px red; */
     justify-content: center;
     align-items: center;
 }
@@ -86,6 +85,7 @@ button{
     width: 40%;
     padding: 3% 0%;
     margin: 2%;
+    margin-top: 10%;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -109,6 +109,10 @@ input{
     width: 70%;
     text-align: center;
     font-size: 100%;
+}
+input > Perfil1{
+    border: 2px solid black;
+    border-radius: 10px;
 }
 .c1{
     border: 2px solid #000000;
@@ -147,9 +151,14 @@ input{
     .c1{
         height: 20px;
     }
+    .card{
+        height: 100%;
+    }
     .card > h1{
-        font-size: 35px;
-        margin-top: -10%;
+        font-size: 25px;
+    }
+    section > .card > h1{
+        font-size: 20px
     }
 }
 @media (max-width:950px){
@@ -158,14 +167,17 @@ input{
         height: 150vh;
         width: 100vw;
         font-size: 13px;
+        border: 1px solid rgb(0, 247, 255);
         background-image: url(bgcadastro.jpg);
         /* background-repeat: no-repeat; */
-        background-size: contain;
+        background-size: cover;
         background-position: center center;
     }
 
     article{
-        height: 100%;
+        height: 70%;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .left{
@@ -174,10 +186,14 @@ input{
     .right{
         width: 100%;
         height: 100%;
+        justify-content: flex-start;
     }
     .card{
         width: 80%;     
         height: 100%;
+    }
+    footer{
+        display: none;
     }
 }
 /* @media (max-height:730px){
