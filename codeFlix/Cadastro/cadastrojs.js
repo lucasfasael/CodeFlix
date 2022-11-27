@@ -16,9 +16,9 @@ function salvar() {
 function _efetuarCadastro() {
     var nome = document.querySelector('input#nome').value
     var email = document.querySelector('input#email').value
-    var telefone = document.querySelector('input#telefone').value
+    var telefone = arrumarNomeTelefone()
     var user = document.querySelector('input#user').value
-    var cpf = document.querySelector('input#cpf').value
+    var cpf =  arrumarNomeCPF()
     var endereco = document.querySelector('input#endereco').value
     var adm = document.querySelector('input#ADM')
     var prof = document.querySelector('input#PROF')
@@ -40,6 +40,73 @@ function _efetuarCadastro() {
 
     var ul = document.querySelector("#msg-erro");
         ul.innerHTML = "";
+}
+
+function arrumarNomeCPF()
+{
+    var cpf = document.querySelector('input#cpf')
+    var n1 = "000"
+    var n2 = "000"
+    var n3 = "000"
+    var n4 = "00"
+    var aux = 0
+    var i = 0
+
+    for(;i<3;i++)
+    {
+        n1 = setCharAt(n1,aux,cpf.value.charAt(i))
+        aux++
+    }aux=0
+    for(;i<6;i++)
+    {
+        n2 = setCharAt(n2,aux,cpf.value.charAt(i))
+        aux++
+    }aux=0
+    for(;i<9;i++)
+    {
+        n3 = setCharAt(n3,aux,cpf.value.charAt(i))
+        aux++
+    }aux=0
+    for(;i<11;i++)
+    {
+        n4 = setCharAt(n4,aux,cpf.value.charAt(i))
+        aux++
+    }aux=0
+    var novaString = n1.concat(".",n2,".",n3,"-",n4)
+    return novaString
+}
+
+function arrumarNomeTelefone()
+{
+    var tell = document.querySelector('input#telefone')
+    var aux1 = "("
+    var aux2 = ")"
+    var n1 = tell.value.charAt(0) + tell.value.charAt(1)
+    var n2 = tell.value.charAt(2)
+    var n3="0000"
+    var n4 = "0000"
+    var aux = 0;
+    for(var i=3;i<7;i++)
+    {
+        n3 = setCharAt(n3,aux,tell.value.charAt(i))
+        aux++
+    }aux = 0
+    for(var i=7;i<11;i++)
+    {
+        n4 = setCharAt(n4,aux,tell.value.charAt(i))
+        aux++
+    }
+    // console.log(n3)
+    // console.log(n4)
+    var novaString = aux1.concat(n1,aux2," ",n2," ",n3,"-",n4)
+    console.log(novaString)
+    return novaString
+    // return aux1.concat(n1,aux2," ",n2," ",n3,"-",n4)
+}
+
+function setCharAt(str,index,chr) {
+    if(index > str.length-1) return str;
+    return str.substring(0,index) + chr + str.substring(index+1);
 }
 
 function _adicionaLinha(nome, email, telefone, user, cpf, endereco, perfil) {
@@ -91,6 +158,13 @@ function _validarCadastro() {
     if (endereco.value.length < 4){
         erros.push("Digite um endereço válido!")
     }
+
+    var tell = document.querySelector("input#telefone")
+
+    if(tell.value.length != 11){
+        erros.push("O numero de telefone precisa ter 11 digitos!")
+    }
+
     var senha = document.querySelector("input#senha")
     var confsenha = document.querySelector("input#confsenha")
 
@@ -99,6 +173,7 @@ function _validarCadastro() {
     } else if (senha.value != confsenha.value){
         erros.push("As senhas estão diferentes!")
     }
+
 
     
     console.log(erros);

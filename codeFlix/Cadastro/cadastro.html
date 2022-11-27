@@ -63,13 +63,13 @@
                     <input id="email" name="email" placeholder="Digite o seu e-mail aqui" type="email" required>
                     <br>
                     <label for="Telefone">Telefone<br></label>
-                    <input id="telefone" name="Telefone" placeholder="Digite o seu telefone aqui" type="number" required>
+                    <input id="telefone" maxlength="11" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="Telefone" placeholder="Digite o seu telefone aqui" type="number" required>
                     <br>
                     <label for="user">Usuário<br></label>
                     <input id="user" name="user" placeholder="Digite o seu login aqui" type="text" required>
                     <br>
                     <label for="cpf">CPF<br></label>
-                    <input maxlength="14" id="cpf" name="cpf" placeholder="Digite o seu CPF aqui" type="text" required>
+                    <input maxlength="11" id="cpf" name="cpf" placeholder="Digite o seu CPF aqui" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required>
                     <br>
                     <label for="endereco">Endereço<br></label>
                     <input id="endereco" name="endereco" placeholder="Digite o seu endereço aqui" type="text" required>

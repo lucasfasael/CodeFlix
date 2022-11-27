@@ -4,6 +4,7 @@ section{
     align-items: center;
     height: 100%;
     width: 100%;
+    font-size: 15px;
 }
 section > .card{
     overflow: scroll;
@@ -76,7 +77,7 @@ li{
     }
     section > .card > table{
         width: 100%;
-        font-size: 9px;
+        font-size: 13px;
     }
 }
 @media (max-width:800px){
