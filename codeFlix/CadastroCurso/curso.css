@@ -1,0 +1,231 @@
+@import url(../menu.css);
+@import url(../footer.css);
+
+.menu-home{
+    width: 100%;
+    height: 45px;
+}
+
+header{
+    height: 5vh;
+    width: 99.9vw;
+}
+article{
+    display: flex;
+    height: 100vh;
+    width: 99.8vw;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+.left > h1{
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    color: rgb(29, 214, 220);
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+.img{
+    height: 80%;
+    width: 80%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 90%;
+    text-align: center;
+    background: rgb(92, 135, 208);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #000000cb;
+}
+.card > h1{
+    color: rgb(18, 18, 133);
+    font-weight: 800;
+    font-size: 40px;
+}
+.card > h4{
+    font-weight: 400;
+}
+h4 > a{
+    color: rgb(29, 214, 220);
+}
+.caixa{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.caixa2{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 40%;
+    padding: 3% 0%;
+    margin: 2%;
+    margin-top: 10%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #000000;
+    background: rgb(29, 214, 220);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(10, 65, 67);
+}
+button:hover{
+    background-color: #00ff40a5;
+    box-shadow: 0px 10px 40px -12px rgb(0, 0, 0);
+}
+input{
+    border: 2px solid #000000;
+    margin-bottom: 2%;
+    border-radius: 8px;
+    height: 3%;
+    width: 70%;
+    text-align: center;
+    font-size: 100%;
+}
+#ADM{
+    margin-top: 2%;
+}
+#PROF{
+    margin-top: 2%;
+}
+#ALUNO{
+    margin-top: 2%;
+}
+.c1{
+    border: 2px solid #000000;
+    border-radius: 8px;
+    height: 65%;
+    width: 80%;
+    text-align: center;
+    font-size: 100%;
+}
+select{
+    text-align: center;
+    outline: none;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    height: 3%;
+    width: 71%;
+    font-size: 100%;
+}
+textarea{
+    text-align: center;
+    resize: none;
+    outline: none;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    height: 10%;
+    font-size: 100%;
+}
+/* @media (max-width:1200px){
+    input{
+        height: 20px;
+    }
+    .c1{
+        height: 20px;
+    }
+    .card > h1{
+        font-size: 30px;
+    }
+    button{
+        height: 30px;
+        padding: 0;
+    }
+    body{
+        font-size: 14px;
+    }
+} */
+@media (max-width: 1800px) {
+    .card{
+        justify-content: flex-start;
+    }
+}
+@media (max-width:1600px){
+    body{
+        font-size: 13px;
+    }
+    input{
+        height: 20px;
+    }
+    .c1{
+        height: 20px;
+    }
+    .card{
+        height: 100%;
+        justify-content: center;
+    }
+    .card > h1{
+        font-size: 25px;
+    }
+    section > .card > h1{
+        font-size: 20px
+    }
+}
+@media (max-width:950px){
+
+    body{
+        height: 150vh;
+        width: 100vw;
+        font-size: 13px;
+        border: 1px solid rgb(0, 247, 255);
+        background-image: url(bgcadastro.jpg);
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        background-position: center center;
+    }
+
+    article{
+        height: 70%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .left{
+        display: none;
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+    }
+    .card{
+        width: 80%;     
+        height: 100%;
+        justify-content: center;
+    }
+    footer{
+        display: none;
+    }
+}
+/* @media (max-height:630px){
+    .card{
+        height: 90%;
+    }
+}  */
+

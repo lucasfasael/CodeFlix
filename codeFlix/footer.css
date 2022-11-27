@@ -4,7 +4,7 @@ footer{
     align-items: center;
     justify-content: center;
     height: 100px;
-    width: 99.74vw;  
+    width: 100vw;  
 }
 .footer-left{
     background-image: url(Imagens/codefoot.png);
@@ -28,4 +28,8 @@ footer{
 }
 .footer-right > h4{
     color: rgb(29, 214, 220);
+}
+.vazio{
+    height: 31.5vh;
+    width: 100%;
 }

@@ -1,0 +1,103 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+}
+section > .card{
+    overflow: scroll;
+    padding: auto;
+    height: 90%;
+    width: 90%;
+    background: rgb(92, 135, 208);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #000000cb;
+    display: flex;
+    flex-direction: column;
+}
+section > .card > h1{
+    width: 30%;
+    height: 5%;
+    padding: 3%, 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #000000;
+    background: rgb(29, 214, 220);
+    box-shadow: 0px 10px 40px -12px rgb(10, 65, 67);
+}
+.card > table{
+    text-align: center;
+    border-collapse: collapse;
+    width: 95%;
+    border-radius: 8px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #000000;
+    background: rgb(126, 251, 255);
+    box-shadow: 0px 10px 40px -12px rgb(10, 65, 67);
+}
+td{
+    border: 3px solid black;
+}
+.dado{
+    background-color: rgb(7, 217, 14);
+}
+li{
+    color: rgb(254, 36, 36);
+    text-shadow: 1px 1px 1px rgb(5, 9, 9), 2px 2px 1px rgb(0, 30, 128);
+    font-size: 18px;
+}
+@media (max-width:1250px){
+    section > .card{
+        width: 100%;
+        padding: none;
+    }
+    section > .card > table{
+        width: 100%;
+        font-size: 15px;
+    }
+   
+}
+@media (max-width:1050px){
+    section > .card{
+        width: 100%;
+        padding: none;
+    }
+    section > .card > h1{
+        font-size: 14px;
+    }
+    section > .card > table{
+        width: 100%;
+        font-size: 13px;
+    }
+}
+@media (max-width:800px){
+    .artigo{
+        width: 200vw;
+        height: 200vh;
+    }
+    section{
+        height: 20%;
+    }
+    section > .card{
+        box-shadow: none;
+        background: none;
+        justify-content: flex-start;
+    }
+        section > .card > h1{
+            display: none;
+        }
+    table{
+        overflow: scroll;
+        width: 100%;
+    }
+}

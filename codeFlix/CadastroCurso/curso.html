@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="curso.css">
+    <link rel="icon" href="../favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="cursodados.css" type="text/css">
+    <script src="../theme.js" defer></script>
+    <script src="cursojs.js" defer></script>
+    <title>Cadastro de Curso</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu-home">
+            <div id="img-logo" class="colunas">
+                <img src="../Imagens/codefoot-1.png" width="250" alt="CodeFlix Logo">
+            </div>
+            <div class="colunas">
+                <ul class="listagem-menu">
+                    <li>
+                        <a class="item" href="../Home/html/index.html">Início</a>
+                    </li>
+                    <li>
+                        <a class="item" href="../Cadastro/cadastro.html">Cadastro</a>
+                    </li>
+                    <li>
+                        <a class="item" href="../CadastroCurso/cadastro.html">Cadastro Curso</a>
+                    </li>
+                    <li>
+                        <a class="item" href="../Fale Conosco/suporte.html">Contato</a>
+                    </li>
+                    <li>
+                        <a class="item" href="../Sobre/sobre.html">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="colunas">
+                <div class="gerenciamento">
+                    <ul class="listagem-gerenciamento">
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <div class="left">
+            <h1 id="cd">Cursos</h1>
+            <div class="img">
+                <img src="gif.svg" alt="gifERROR">
+                
+            </div>
+        </div>
+        <div class="right">
+            <div class="card">
+                <h1>Cadastre um Curso</h1>
+                <form onsubmit="return false" action="" method="">
+                    <label for="nome">Título do Curso<br></label>
+                    <input id="nome" name="nome" placeholder="Digite o título do seu curso" type="text" required>
+                    <br>
+                    <label for="Dúvida">Qual a linguagem utilizada ?</label>
+                    <br>
+                    <select name="ling" id="ling">
+                            <option selected value="lg">HTML</option>
+                            <option value="lg">CSS</option>
+                            <option value="lg">JavaScript</option>
+                            <option value="lg">Bootstrap</option>
+                    </select>
+                    <br>
+                    <label for="dificuldade">Qual o nível do curso ?</label>
+                    <select name="dificuldade" id="dificuldade">
+                        <option selected value="df">Iniciante</option>
+                        <option value="df">Intermediário</option>
+                        <option value="df">Avançado</option>
+                    </select>
+                    <br>
+                    <label for="Telefone">Quantidade de videoaula:<br></label>
+                    <input id="telefone" maxlength="3" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="Telefone" placeholder="Digite a quantidade de videoaula" type="number" required>
+                    <br>
+                    <label for="cpf">Quantidade de horas:<br></label>
+                    <input maxlength="11" id="cpf" name="cpf" placeholder="Digite a quantidade de horas do curso" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required>
+                    <br>
+                    <label for="user">Ferramenta necessária:<br></label>
+                    <input id="user" name="user" placeholder="Digite a ferramenta" type="text" required>
+                    <br>
+                    <label for="endereco">Recomendação de curso ?<br></label>
+                    <input id="endereco" name="endereco" placeholder="Digite um curso auxiliar" type="text" required>
+                    <br>
+
+                    <label for="cert">Esse curso tem certificação ?<br></label>
+
+                    <div class="caixa2">
+                        <input value="Administrador" id="ADM" name="cert" type="radio">
+                        <label for="ADM">Sim</label>
+                        <input value="Professor" id="PROF" name="cert" type="radio">
+                        <label for="PROF">Não</label>
+                    </div>
+
+                    <label for="grat">O curso é gratuito ?<br></label>
+
+                    <div class="caixa2">
+                        <input value="Administrador" id="ADM" name="grat" type="radio">
+                        <label for="ADM">Sim</label>
+                        <input value="Professor" id="PROF" name="grat" type="radio">
+                        <label for="PROF">Não</label>
+                    </div>
+
+                    <label for="msg">Descrição do curso: </label> <br>
+                    <textarea name="msg" id="msg" cols="60" rows="8" placeholder="Sua descrição aqui..."></textarea>
+
+                    <br>
+                    <div class="caixa">
+                        <button id="salvar">Salvar</button>
+                        <button type="reset">Apagar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </article>
+    <section>
+        <div class="card">
+            <h1>Dados Cadastrais</h1>
+                <ul id="msg-erro">
+        
+                </ul>
+            <table>
+                <tr class="dado">
+                    <td>Título</td>
+                    <td>Linguagem</td>
+                    <td>Nível</td>
+                    <td>Nº Aulas</td>
+                    <td>Horas</td>
+                    <td>Ferramenta</td>
+                    <td>Auxiliar</td>
+                    <td>Certificação</td>
+                    <td>Gratuidade</td>
+                    <td>Descrição</td>
+                </tr>
+                <tr>
+                    <td>Primeira Aula</td>
+                    <td>JavaScript</td>
+                    <td>Iniciante</td>
+                    <td>25</td>
+                    <td>40</td>
+                    <td>VS Code</td>
+                    <td>HTML/CSS</td>
+                    <td>Sim</td>
+                    <td>Sim</td>
+                    <td>Passos iniciais JS</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left"></div>
+        <div class="footer-right">
+            <h4>Telefone: (79) 9 9182 - 4519 <br>E-mail: codeflix@code.com</h4>
+        </div>
+        <div class="footer-righrr">
+            <h2 id="lighttheme">LightTheme</h2> <br>
+            <h2 id="darktheme">DarkTheme</h2>
+        </div>
+    </footer>
+</body>
+
+</html>
