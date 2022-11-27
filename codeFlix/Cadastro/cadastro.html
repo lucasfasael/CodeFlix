@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <script src="cadastrojs.js" defer></script>
     <title>Cadastro</title>
 </head>
+
 <body>
     <header>
         <nav class="menu-home">
@@ -36,7 +38,7 @@
             <div class="colunas">
                 <div class="gerenciamento">
                     <ul class="listagem-gerenciamento">
-                        
+
                     </ul>
                 </div>
             </div>
@@ -53,51 +55,54 @@
             <div class="card">
                 <h1>Criar Conta</h1>
                 <h4>Já é um membro? <a href="../Login/login.html">Login</a></h4>
-                <form action="" method="get">
+                <form onsubmit="return false" action="" method="">
                     <label for="nome">Nome Completo<br></label>
                     <input id="nome" name="nome" placeholder="Digite o seu nome aqui" type="text" required>
                     <br>
                     <label for="email">E-mail<br></label>
                     <input id="email" name="email" placeholder="Digite o seu e-mail aqui" type="email" required>
                     <br>
-                    <label for="cell">Telefone<br></label>
-                    <input id="cell" name="cell" placeholder="Digite o seu telefone aqui" type="number" required>
+                    <label for="Telefone">Telefone<br></label>
+                    <input id="telefone" name="Telefone" placeholder="Digite o seu telefone aqui" type="number" required>
                     <br>
                     <label for="user">Usuário<br></label>
                     <input id="user" name="user" placeholder="Digite o seu login aqui" type="text" required>
                     <br>
-                    <label for="CPF">CPF<br></label>
-                    <input id="CPF" name="CPF" placeholder="Digite o seu CPF aqui" type="text" required>
+                    <label for="cpf">CPF<br></label>
+                    <input maxlength="14" id="cpf" name="cpf" placeholder="Digite o seu CPF aqui" type="text" required>
                     <br>
-                    <label for="Endereço">Endereço<br></label>
-                    <input id="Endereço" name="Endereço" placeholder="Digite o seu endereço aqui" type="text" required>
+                    <label for="endereco">Endereço<br></label>
+                    <input id="endereco" name="endereco" placeholder="Digite o seu endereço aqui" type="text" required>
                     <br>
                     <label for="Perfil">Tipo de Perfil<br></label>
 
                     <div class="caixa">
-                        <input id="Perfil1" name="Perfil" type="radio" required>
-                        <label for="perfil1">Administrador</label>
-                        <input id="Perfil2" name="Perfil" type="radio" required>
-                        <label for="perfil2">Professor</label>
-                        <input id="Perfil3" name="Perfil" checked type="radio" required>
-                        <label for="perfil3">Aluno</label>
+                        <input value="Administrador" id="ADM" name="Perfil" type="radio">
+                        <label for="ADM">Administrador</label>
+                        <input value="Professor" id="PROF" name="Perfil" type="radio">
+                        <label for="PROF">Professor</label>
+                        <input value="Aluno" id="ALUNO" name="Perfil" checked type="radio">
+                        <label for="ALUNO">Aluno</label>
                     </div>
 
                     <br>
                     <div class="caixa">
-                    <div class="cl">
-                        <label for="senha">Senha</label>
-                        <input class="c1" id="senha" name="senha" placeholder="Digite a sua senha aqui" type="password" required>
-                    </div>
-                    <div class="cr">
-                        <label for="confsenha">Confirme a sua senha <br></label>
-                        <input class="c1" id="confsenha" name="confsenha" placeholder="Confirme sua senha aqui" type="password" required>
-                    </div>
+                        <div class="cl">
+                            <label for="senha">Senha</label>
+                            <input class="c1" id="senha" name="senha" placeholder="Digite a sua senha aqui"
+                                type="password">
+                        </div>
+                        <div class="cr">
+                            <label for="confsenha">Confirme a sua senha <br></label>
+                            <input class="c1" id="confsenha" name="confsenha" placeholder="Confirme sua senha aqui"
+                                type="password">
+                        </div>
                     </div>
                     <div class="caixa">
-                        <button id = "salvar">Salvar</button>
+                        <button id="salvar">Salvar</button>
                         <button type="reset">Apagar</button>
                     </div>
+
                 </form>
             </div>
         </div>
@@ -105,19 +110,42 @@
     <section>
         <div class="card">
             <h1>Dados Cadastrais</h1>
+                <ul id="msg-erro">
+        
+                </ul>
             <table>
-            <tr class="dado"> <td>NOME</td> <td>TELEFONE</td> <td>E-MAIL</td> <td>DATA DE NASCIMENTO</td> <td>DATA DE CADASTRO</td> <td>USUÁRIO</td> 
-            </tr>
-            <tr> <td>Lucas Fasael</td> <td>(79) 9 9182-4519</td> <td>fasael@hotmail.com</td> <td>22/07/1998</td> <td>13/10/2022</td> <td>FullStack123</td> 
-            </tr>
+                <tr class="dado">
+                    <td>NOME</td>
+                    <td>E-MAIL</td>
+                    <td>TELEFONE</td>
+                    <td>USUÁRIO</td>
+                    <td>CPF</td>
+                    <td>ENDEREÇO</td>
+                    <td>PERFIL</td>
+                </tr>
+                <tr>
+                    <td>Lucas Fasael</td>
+                    <td>fasael@hotmail.com</td>
+                    <td>(79) 9 9182-4519</td>
+                    <td>lucasfasael</td>
+                    <td>123.215.475-51</td>
+                    <td>Rua dos rueiros, 90</td>
+                    <td>Administrador</td>
+                </tr>
             </table>
-            </div>
+        </div>
     </section>
 
     <footer>
         <div class="footer-left"></div>
-        <div class="footer-right"><h4>Telefone: (79) 9 9182 - 4519 <br>E-mail: codeflix@code.com</h4></div>
-        <div class="footer-righrr"><h2 id="lighttheme">LightTheme</h2> <br> <h2 id="darktheme">DarkTheme</h2></div>
+        <div class="footer-right">
+            <h4>Telefone: (79) 9 9182 - 4519 <br>E-mail: codeflix@code.com</h4>
+        </div>
+        <div class="footer-righrr">
+            <h2 id="lighttheme">LightTheme</h2> <br>
+            <h2 id="darktheme">DarkTheme</h2>
+        </div>
     </footer>
 </body>
+
 </html>

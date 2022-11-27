@@ -50,6 +50,11 @@ td{
 .dado{
     background-color: rgb(7, 217, 14);
 }
+li{
+    color: rgb(254, 36, 36);
+    text-shadow: 1px 1px 1px rgb(5, 9, 9), 2px 2px 1px rgb(0, 30, 128);
+    font-size: 18px;
+}
 @media (max-width:1250px){
     section > .card{
         width: 100%;
