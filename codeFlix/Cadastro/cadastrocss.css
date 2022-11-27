@@ -74,11 +74,11 @@ h4 > a{
     align-items: center;
 }
 .cl{
-    height: 50%;
+    height: 48px;
     width: 50%;
 }
 .cr{
-    height: 50%;
+    height: 48px;
     width: 50%;
 }
 button{
@@ -110,9 +110,14 @@ input{
     text-align: center;
     font-size: 100%;
 }
-input > Perfil1{
-    border: 2px solid black;
-    border-radius: 10px;
+#ADM{
+    margin-top: 2%;
+}
+#PROF{
+    margin-top: 2%;
+}
+#ALUNO{
+    margin-top: 2%;
 }
 .c1{
     border: 2px solid #000000;
