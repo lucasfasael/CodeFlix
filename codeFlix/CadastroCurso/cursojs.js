@@ -1,5 +1,5 @@
-var salvarPessoa = document.querySelector("button#salvar")
-salvarPessoa.addEventListener("click", salvar)
+var salvarCurso = document.querySelector("button#salvar")
+salvarCurso.addEventListener("click", salvar)
 erros = []
 
 function salvar() {
@@ -14,112 +14,55 @@ function salvar() {
 }
 
 function _efetuarCadastro() {
-    var nome = document.querySelector('input#nome').value
-    var email = document.querySelector('input#email').value
-    var telefone = arrumarNomeTelefone()
-    var user = document.querySelector('input#user').value
-    var cpf =  arrumarNomeCPF()
-    var endereco = document.querySelector('input#endereco').value
-    var adm = document.querySelector('input#ADM')
-    var prof = document.querySelector('input#PROF')
-    var aluno = document.querySelector('input#ALUNO')
+    var titulo = document.querySelector('input#titulo').value
+    var ling = document.querySelector('select#ling').value
+    var dificuldade = document.querySelector('select#dificuldade').value
+    var qtdVideo =  document.querySelector('input#qtdVideo').value
+    var horas = document.querySelector('input#horas').value
+    var ferramenta = document.querySelector('input#ferramenta').value
+    var auxiliar = document.querySelector('input#auxiliar').value
+    var msg = document.querySelector('textarea#msg').value
+    var sim = document.querySelector('input#sim')
+    var nao = document.querySelector('input#nao')
+    var yes = document.querySelector('input#yes')
+    var no = document.querySelector('input#no')
+    
+    var cert = '';
+    var grat = '';
 
-    var perfil = '';
+    if (sim.checked) {
+        cert = sim.value
+    }
+    if (nao.checked) {
+        cert = nao.value
+    }
+    if (yes.checked) {
+        grat = yes.value
+    }
+    if (no.checked) {
+        grat = no.value
+    }
 
-    if (adm.checked) {
-        perfil = adm.value
-    }
-    if (prof.checked) {
-        perfil = prof.value
-    }
-    if (aluno.checked) {
-        perfil = aluno.value
-    }
-
-    _adicionaLinha(nome, email, telefone, user, cpf, endereco, perfil)
+    _adicionaLinha(titulo, ling, dificuldade, qtdVideo, horas, ferramenta, auxiliar, cert, grat, msg)
 
     var ul = document.querySelector("#msg-erro");
         ul.innerHTML = "";
 }
 
-function arrumarNomeCPF()
-{
-    var cpf = document.querySelector('input#cpf')
-    var n1 = "000"
-    var n2 = "000"
-    var n3 = "000"
-    var n4 = "00"
-    var aux = 0
-    var i = 0
-
-    for(;i<3;i++)
-    {
-        n1 = setCharAt(n1,aux,cpf.value.charAt(i))
-        aux++
-    }aux=0
-    for(;i<6;i++)
-    {
-        n2 = setCharAt(n2,aux,cpf.value.charAt(i))
-        aux++
-    }aux=0
-    for(;i<9;i++)
-    {
-        n3 = setCharAt(n3,aux,cpf.value.charAt(i))
-        aux++
-    }aux=0
-    for(;i<11;i++)
-    {
-        n4 = setCharAt(n4,aux,cpf.value.charAt(i))
-        aux++
-    }aux=0
-    var novaString = n1.concat(".",n2,".",n3,"-",n4)
-    return novaString
-}
-
-function arrumarNomeTelefone()
-{
-    var tell = document.querySelector('input#telefone')
-    var aux1 = "("
-    var aux2 = ")"
-    var n1 = tell.value.charAt(0) + tell.value.charAt(1)
-    var n2 = tell.value.charAt(2)
-    var n3="0000"
-    var n4 = "0000"
-    var aux = 0;
-    for(var i=3;i<7;i++)
-    {
-        n3 = setCharAt(n3,aux,tell.value.charAt(i))
-        aux++
-    }aux = 0
-    for(var i=7;i<11;i++)
-    {
-        n4 = setCharAt(n4,aux,tell.value.charAt(i))
-        aux++
-    }
-    // console.log(n3)
-    // console.log(n4)
-    var novaString = aux1.concat(n1,aux2," ",n2," ",n3,"-",n4)
-    console.log(novaString)
-    return novaString
-    // return aux1.concat(n1,aux2," ",n2," ",n3,"-",n4)
-}
-
-function setCharAt(str,index,chr) {
-    if(index > str.length-1) return str;
-    return str.substring(0,index) + chr + str.substring(index+1);
-}
-
-function _adicionaLinha(nome, email, telefone, user, cpf, endereco, perfil) {
+function _adicionaLinha(titulo, ling, dificuldade, qtdVideo, horas, ferramenta, auxiliar, cert, grat, msg) {
     var tabela = document.querySelector('table');
     var row = tabela.insertRow(tabela.rows.length);
 
-    _adicionaColuna(row, 0, nome)
-    _adicionaColuna(row, 1, email)
-    _adicionaColuna(row, 2, telefone)
-    _adicionaColuna(row, 3, user)
-    _adicionaColuna(row, 4, cpf)
-    _adicionaColuna(row, 5, endereco)
-    _adicionaColuna(row, 6, perfil)
+    _adicionaColuna(row, 0, titulo)
+    _adicionaColuna(row, 1, ling)
+    _adicionaColuna(row, 2, dificuldade)
+    _adicionaColuna(row, 3, qtdVideo)
+    _adicionaColuna(row, 4, horas)
+    _adicionaColuna(row, 5, ferramenta)
+    _adicionaColuna(row, 6, auxiliar)
+    _adicionaColuna(row, 7, cert)
+    _adicionaColuna(row, 8, grat)
+    _adicionaColuna(row, 9, msg)
 }
 
 function _adicionaColuna(row, posicao, valor) {
@@ -129,56 +72,49 @@ function _adicionaColuna(row, posicao, valor) {
 
 function _validarCadastro() {
     erros = []
-    var nome = document.querySelector("input#nome")
+    var titulo = document.querySelector("input#titulo")
 
-    if (nome.value.length < 3) {
-        erros.push("Digite seu nome completo!")
-        console.log("Nome deu error")
+    if (titulo.value.length < 3) {
+        erros.push("Seu título é muito curto!")
     }
 
-    var email = document.querySelector("input#email")
+    var qtdVideo = document.querySelector("input#qtdVideo")
 
-    if (!email.value.includes("@") || !email.value.includes(".com")) {
-        erros.push("Digite um e-mail válido!")
+    if (qtdVideo.value < 0) {
+        erros.push("A quantidade de aulas não pode ser negativa!")
+    }else if(qtdVideo.value.length == 0){
+        erros.push("A quantidade de videoaula é obrigatória!")
+    }else if(qtdVideo.value < 10){
+        erros.push("A quantidade de videoaulas não pode ser menor que 10!")
+    }
+    var horas = document.querySelector("input#horas")
+
+    if (horas.value < 0) {
+        erros.push("A quantidade de horas não pode ser negativa!")
+    }else if(horas.value.length == 0){
+        erros.push("A quantidade de horas é obrigatória!")
+    }else if(horas.value < 10){
+        erros.push("A quantidade de horas não pode ser menor que 10!")
     }
 
-    var cpf = document.querySelector("input#cpf")
+    var ferramenta = document.querySelector("input#ferramenta")
 
-    if (!_validarCpf(cpf.value)) {
-        erros.push("CPF inválido!")
+    if (ferramenta.value.length == 0){
+        erros.push("O campo de ferramenta não pode ficar em branco!")
+    }
+    var auxiliar = document.querySelector("input#auxiliar")
+
+    if (auxiliar.value.length == 0){
+        erros.push("A recomendação de curso não pode ficar em branco!")
     }
 
-    var user = document.querySelector("input#user")
+    var msg = document.querySelector("textarea#msg")
 
-    if (user.value.length < 4){
-        erros.push("Digite um usuário válido!")
+    if (msg.value.length == 0){
+        erros.push("Digite uma descrição para o seu curso!")
     }
-    var endereco = document.querySelector("input#endereco")
-
-    if (endereco.value.length < 4){
-        erros.push("Digite um endereço válido!")
-    }
-
-    var tell = document.querySelector("input#telefone")
-
-    if(tell.value.length != 11){
-        erros.push("O numero de telefone precisa ter 11 digitos!")
-    }
-
-    var senha = document.querySelector("input#senha")
-    var confsenha = document.querySelector("input#confsenha")
-
-    if(senha.value.length < 4 || confsenha.value.length < 4){
-        erros.push("Sua senha é muito curta!")
-    } else if (senha.value != confsenha.value){
-        erros.push("As senhas estão diferentes!")
-    }
-
 
     
-    console.log(erros);
-
-    console.log("fim")
     return erros.length == 0;
 }
 function _mostrarErros() {
@@ -192,39 +128,7 @@ function _mostrarErros() {
     });
 }
 
-function _validarCpf(strCPF) {
-    var Soma;
-    var Resto;
-    Soma = 0;
-    if (strCPF == "00000000000") return false;
-
-    for (i = 1; i <= 9; i++) Soma = Soma + parseInt(strCPF.substring(i - 1, i)) * (11 - i);
-    Resto = (Soma * 10) % 11;
-
-    if ((Resto == 10) || (Resto == 11)) Resto = 0;
-    if (Resto != parseInt(strCPF.substring(9, 10))) return false;
-
-    Soma = 0;
-    for (i = 1; i <= 10; i++) Soma = Soma + parseInt(strCPF.substring(i - 1, i)) * (12 - i);
-    Resto = (Soma * 10) % 11;
-
-    if ((Resto == 10) || (Resto == 11)) Resto = 0;
-    if (Resto != parseInt(strCPF.substring(10, 11))) return false;
-    return true;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+// DARK THEME E LIGHT THEME
 var dark = document.getElementById("darktheme");
 
 dark.addEventListener("click", function () {

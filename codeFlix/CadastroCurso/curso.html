@@ -59,54 +59,54 @@
             <div class="card">
                 <h1>Cadastre um Curso</h1>
                 <form onsubmit="return false" action="" method="">
-                    <label for="nome">Título do Curso<br></label>
-                    <input id="nome" name="nome" placeholder="Digite o título do seu curso" type="text" required>
+                    <label for="titulo">Título do Curso<br></label>
+                    <input id="titulo" name="titulo" placeholder="Digite o título do seu curso" type="text" required>
                     <br>
-                    <label for="Dúvida">Qual a linguagem utilizada ?</label>
+                    <label for="ling">Qual a linguagem utilizada ?</label>
                     <br>
                     <select name="ling" id="ling">
-                            <option selected value="lg">HTML</option>
-                            <option value="lg">CSS</option>
-                            <option value="lg">JavaScript</option>
-                            <option value="lg">Bootstrap</option>
+                            <option selected value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Bootstrap">Bootstrap</option>
                     </select>
                     <br>
                     <label for="dificuldade">Qual o nível do curso ?</label>
                     <select name="dificuldade" id="dificuldade">
-                        <option selected value="df">Iniciante</option>
-                        <option value="df">Intermediário</option>
-                        <option value="df">Avançado</option>
+                        <option selected value="Iniciante">Iniciante</option>
+                        <option value="Intermediário">Intermediário</option>
+                        <option value="Avançado">Avançado</option>
                     </select>
                     <br>
-                    <label for="Telefone">Quantidade de videoaula:<br></label>
-                    <input id="telefone" maxlength="3" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="Telefone" placeholder="Digite a quantidade de videoaula" type="number" required>
+                    <label for="qtdVideo">Quantidade de videoaula:<br></label>
+                    <input id="qtdVideo" maxlength="3" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="qtdVideo" placeholder="Digite a quantidade de videoaula" type="number" required>
                     <br>
-                    <label for="cpf">Quantidade de horas:<br></label>
-                    <input maxlength="11" id="cpf" name="cpf" placeholder="Digite a quantidade de horas do curso" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required>
+                    <label for="horas">Quantidade de horas:<br></label>
+                    <input maxlength="3" id="horas" name="horas" placeholder="Digite a quantidade de horas do curso" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required>
                     <br>
-                    <label for="user">Ferramenta necessária:<br></label>
-                    <input id="user" name="user" placeholder="Digite a ferramenta" type="text" required>
+                    <label for="ferramenta">Ferramenta necessária:<br></label>
+                    <input id="ferramenta" name="ferramenta" placeholder="Digite a ferramenta" type="text" required>
                     <br>
-                    <label for="endereco">Recomendação de curso ?<br></label>
-                    <input id="endereco" name="endereco" placeholder="Digite um curso auxiliar" type="text" required>
+                    <label for="auxiliar">Recomendação de curso ?<br></label>
+                    <input id="auxiliar" name="auxiliar" placeholder="Digite um curso auxiliar" type="text" required>
                     <br>
 
-                    <label for="cert">Esse curso tem certificação ?<br></label>
+                    <label for="sim">Esse curso tem certificação ?<br></label>
 
                     <div class="caixa2">
-                        <input value="Administrador" id="ADM" name="cert" type="radio">
-                        <label for="ADM">Sim</label>
-                        <input value="Professor" id="PROF" name="cert" type="radio">
-                        <label for="PROF">Não</label>
+                        <input value="Sim" id="sim" name="cert" type="radio" checked>
+                        <label for="sim">Sim</label>
+                        <input value="Não" id="nao" name="cert" type="radio">
+                        <label for="nao">Não</label>
                     </div>
 
-                    <label for="grat">O curso é gratuito ?<br></label>
+                    <label for="perg">O curso é gratuito ?<br></label>
 
                     <div class="caixa2">
-                        <input value="Administrador" id="ADM" name="grat" type="radio">
-                        <label for="ADM">Sim</label>
-                        <input value="Professor" id="PROF" name="grat" type="radio">
-                        <label for="PROF">Não</label>
+                        <input value="Sim" id="yes" name="grat" type="radio" checked>
+                        <label for="yes">Sim</label>
+                        <input value="Não" id="no" name="grat" type="radio">
+                        <label for="no">Não</label>
                     </div>
 
                     <label for="msg">Descrição do curso: </label> <br>

@@ -141,6 +141,7 @@ textarea{
     border: 2px solid #000000;
     border-radius: 8px;
     height: 10%;
+    width: 71%;
     font-size: 100%;
 }
 /* @media (max-width:1200px){

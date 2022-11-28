@@ -132,8 +132,7 @@ function _validarCadastro() {
     var nome = document.querySelector("input#nome")
 
     if (nome.value.length < 3) {
-        erros.push("Digite seu nome completo!")
-        console.log("Nome deu error")
+        erros.push("Seu nome está muito curto!")
     }
 
     var email = document.querySelector("input#email")
@@ -151,12 +150,12 @@ function _validarCadastro() {
     var user = document.querySelector("input#user")
 
     if (user.value.length < 4){
-        erros.push("Digite um usuário válido!")
+        erros.push("Seu usuário está muito curto!")
     }
     var endereco = document.querySelector("input#endereco")
 
     if (endereco.value.length < 4){
-        erros.push("Digite um endereço válido!")
+        erros.push("Seu endereço está muito vago!")
     }
 
     var tell = document.querySelector("input#telefone")
@@ -213,18 +212,7 @@ function _validarCpf(strCPF) {
     return true;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+// DARK THEME E LIGHT THEME
 var dark = document.getElementById("darktheme");
 
 dark.addEventListener("click", function () {
