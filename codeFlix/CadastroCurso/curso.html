@@ -60,7 +60,7 @@
                 <h1>Cadastre um Curso</h1>
                 <form onsubmit="return false" action="" method="">
                     <label for="titulo">Título do Curso<br></label>
-                    <input id="titulo" name="titulo" placeholder="Digite o título do seu curso" type="text" required>
+                    <input id="titulo" name="titulo" placeholder="Digite o título do seu curso" type="text">
                     <br>
                     <label for="ling">Qual a linguagem utilizada ?</label>
                     <br>
@@ -79,16 +79,16 @@
                     </select>
                     <br>
                     <label for="qtdVideo">Quantidade de videoaula:<br></label>
-                    <input id="qtdVideo" maxlength="3" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="qtdVideo" placeholder="Digite a quantidade de videoaula" type="number" required>
+                    <input id="qtdVideo" maxlength="3" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="qtdVideo" placeholder="Digite a quantidade de videoaula" type="number">
                     <br>
                     <label for="horas">Quantidade de horas:<br></label>
-                    <input maxlength="3" id="horas" name="horas" placeholder="Digite a quantidade de horas do curso" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required>
+                    <input maxlength="3" id="horas" name="horas" placeholder="Digite a quantidade de horas do curso" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
                     <br>
                     <label for="ferramenta">Ferramenta necessária:<br></label>
-                    <input id="ferramenta" name="ferramenta" placeholder="Digite a ferramenta" type="text" required>
+                    <input id="ferramenta" name="ferramenta" placeholder="Digite a ferramenta" type="text">
                     <br>
                     <label for="auxiliar">Recomendação de curso ?<br></label>
-                    <input id="auxiliar" name="auxiliar" placeholder="Digite um curso auxiliar" type="text" required>
+                    <input id="auxiliar" name="auxiliar" placeholder="Digite um curso auxiliar" type="text">
                     <br>
 
                     <label for="sim">Esse curso tem certificação ?<br></label>
@@ -114,7 +114,7 @@
 
                     <br>
                     <div class="caixa">
-                        <a id="salvar" href="#tb">Salvar</a>
+                        <button id="salvar">Salvar</button>
                         <button type="reset">Apagar</button>
                     </div>
 

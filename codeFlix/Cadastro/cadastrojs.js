@@ -1,4 +1,4 @@
-var salvarPessoa = document.querySelector("a#salvar")
+var salvarPessoa = document.querySelector("button#salvar")
 salvarPessoa.addEventListener("click", salvar)
 var form = document.querySelector('form')
 erros = []
@@ -11,6 +11,7 @@ function salvar() {
     } else {
         _mostrarErros();
     }
+    location.href = '#tb'
 }
 
 function _efetuarCadastro() {
