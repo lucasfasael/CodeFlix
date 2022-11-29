@@ -1,5 +1,11 @@
 @import url(../menu.css);
 @import url(../footer.css);
+
+.menu-home{
+    width: 100%;
+    height: 45px;
+}
+
 article{
     text-align: center;
     height: 79.3vh;

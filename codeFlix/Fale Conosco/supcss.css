@@ -34,8 +34,8 @@ article{
     height: 100%;
 }
 .card{
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -44,6 +44,9 @@ article{
     box-shadow: 0px 10px 40px #000000cb;
     display: flex;
     flex-direction: column;
+}
+.card > h1{
+    color: rgb(18, 18, 133);
 }
 .card > h4{
     margin-bottom: 5%;
@@ -73,7 +76,6 @@ textarea{
     outline: none;
     border: 2px solid #000000;
     border-radius: 8px;
-    height: 4%;
     font-size: 100%;
 }
 label{
@@ -125,7 +127,7 @@ label{
         background-position: center center;
     }
 }
-@media (max-height:730px){
+/* @media (max-height:730px){
     .card{
         height: 80%;
     }
@@ -139,4 +141,4 @@ label{
     .card{
         height: 100%;
     }
-}
+} */

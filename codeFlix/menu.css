@@ -10,7 +10,7 @@ body{
     background-color: rgb(10, 10, 85);
 }
 
-ul{
+.listagem-menu{
     list-style: none;
     color: aliceblue;
 }
@@ -53,11 +53,11 @@ a, h2{
 .listagem-gerenciamento{
     text-align: center;
 }
-@media (max-width:440px){
-    .colunas > h2{
-        display: none;
-    }
+@media (max-width:456px){
     #img-logo{
         display: none;
+    }
+    li{
+        font-size: 12px;
     }
 }

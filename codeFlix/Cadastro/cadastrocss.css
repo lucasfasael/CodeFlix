@@ -147,7 +147,7 @@ input{
     }
 } */
 @media (max-width:1600px){
-    body{
+    article{
         font-size: 13px;
     }
     input{
@@ -171,8 +171,6 @@ input{
     body{
         height: 150vh;
         width: 100vw;
-        font-size: 13px;
-        border: 1px solid rgb(0, 247, 255);
         background-image: url(bgcadastro.jpg);
         /* background-repeat: no-repeat; */
         background-size: cover;
@@ -198,6 +196,11 @@ input{
         height: 100%;
     }
     footer{
+        display: none;
+    }
+}
+@media (max-width:730px) {
+    #img-logo{
         display: none;
     }
 }
