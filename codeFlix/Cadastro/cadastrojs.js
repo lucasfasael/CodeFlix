@@ -1,10 +1,9 @@
-var salvarPessoa = document.querySelector("button#salvar")
+var salvarPessoa = document.querySelector("a#salvar")
 salvarPessoa.addEventListener("click", salvar)
 var form = document.querySelector('form')
 erros = []
 
 function salvar() {
-
     if (_validarCadastro()) {
 
         _efetuarCadastro()
