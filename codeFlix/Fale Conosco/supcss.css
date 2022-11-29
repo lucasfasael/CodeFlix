@@ -106,9 +106,6 @@ label{
         width: 70%;
         height: 90%;
     }
-    .card > h1{
-        font-size: 40px;
-    }
 }
 @media (max-width:1200px){
     body{
