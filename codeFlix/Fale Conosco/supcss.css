@@ -101,7 +101,12 @@ label{
     background-color: #00ff40a5;
     box-shadow: 0px 10px 40px -12px rgb(0, 0, 0);
 }
-
+@media (max-width: 2100px) {
+    .card{
+        width: 70%;
+        height: 90%;
+    }
+}
 @media (max-width:1200px){
     body{
         font-size: 12px;
