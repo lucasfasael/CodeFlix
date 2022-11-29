@@ -102,9 +102,13 @@ label{
     box-shadow: 0px 10px 40px -12px rgb(0, 0, 0);
 }
 @media (max-width: 2100px) {
-    .card{
-        width: 70%;
-        height: 90%;
+    .card > h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 1600px) {
+    .card > h1{
+        font-size: 30px;
     }
 }
 @media (max-width:1200px){
